@@ -1,0 +1,620 @@
+=============== Jun 23, 2025 (IDT) ===============
+17:33:34.197337 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:33:34.199750 db@open opening
+17:33:34.200394 version@stat F·[] S·0B[] Sc·[]
+17:33:34.201369 db@janitor F·2 G·0
+17:33:34.201413 db@open done T·1.647707ms
+17:33:34.664065 memdb@flush N·18 S·582B
+17:33:34.665080 memdb@flush created L0@3 N·18 S·301B "\ndb..ion,v18":"\ndb..ion,v1"
+17:33:34.665131 version@stat F·[1] S·301B[301B] Sc·[0.25]
+17:33:34.665872 memdb@flush committed F·1 T·1.761801ms
+17:33:34.665954 journal@remove removed @1
+17:33:34.665989 table@compaction range L-1 "":""
+17:33:34.666013 table@compaction L0·1 -> L1·0 S·301B Q·18
+17:33:34.667107 table@build created L1@4 N·3 S·173B "\ndb..ion,v18":"\ndb..ion,v16"
+17:33:34.667157 version@stat F·[0 1] S·173B[0B 173B] Sc·[0.00 0.00]
+17:33:34.668439 table@compaction committed F~ S-128B Ke·0 D·15 T·2.40908ms
+17:33:34.668576 table@remove removed @3
+17:44:10.952194 db@close closing
+17:44:10.952916 db@close done T·672.307µs
+=============== Jun 23, 2025 (IDT) ===============
+17:44:31.921576 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:44:31.921894 version@stat F·[0 1] S·173B[0B 173B] Sc·[0.00 0.00]
+17:44:31.921903 db@open opening
+17:44:31.922089 journal@recovery F·1
+17:44:31.922196 journal@recovery recovering @2
+17:44:31.923245 memdb@flush created L0@5 N·9 S·350B "\x04de..can,v26":"\npr..ion,v19"
+17:44:31.923866 version@stat F·[1 1] S·523B[350B 173B] Sc·[0.25 0.00]
+17:44:31.929805 db@janitor F·4 G·0
+17:44:31.929832 db@open done T·7.923587ms
+20:28:18.803452 db@close closing
+20:28:18.803905 db@close done T·361.288µs
+=============== Jun 23, 2025 (IDT) ===============
+20:28:36.835321 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:28:36.836019 version@stat F·[1 1] S·523B[350B 173B] Sc·[0.25 0.00]
+20:28:36.836052 db@open opening
+20:28:36.836372 journal@recovery F·1
+20:28:36.836715 journal@recovery recovering @6
+20:28:36.838640 memdb@flush created L0@8 N·4 S·185B "\x04de..can,v32":"\x04de..can,v29"
+20:28:36.839258 version@stat F·[2 1] S·708B[535B 173B] Sc·[0.50 0.00]
+20:28:36.843199 db@janitor F·5 G·0
+20:28:36.843232 db@open done T·7.169879ms
+=============== Jun 24, 2025 (IDT) ===============
+02:55:37.477438 db@close closing
+02:55:37.477734 db@close done T·295.922µs
+=============== Jun 24, 2025 (IDT) ===============
+09:06:02.877187 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:06:02.878444 version@stat F·[2 1] S·708B[535B 173B] Sc·[0.50 0.00]
+09:06:02.878476 db@open opening
+09:06:02.878771 journal@recovery F·1
+09:06:02.879121 journal@recovery recovering @9
+09:06:02.919989 memdb@flush created L0@11 N·37375 S·2MiB "\x00\x00\x00..ore,v13561":"\x11\x8a\xf1..*\x9d:,v56"
+09:06:02.921528 version@stat F·[3 1] S·2MiB[2MiB 173B] Sc·[0.75 0.00]
+09:06:02.925635 db@janitor F·6 G·0
+09:06:02.925648 db@open done T·47.16451ms
+09:06:03.390495 table@compaction L0·3 -> L1·1 S·2MiB Q·37409
+09:06:03.402753 table@build created L1@14 N·23032 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+09:06:03.402783 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+09:06:03.403461 table@compaction committed F-3 S-261KiB Ke·0 D·14359 T·12.946828ms
+09:06:03.403666 table@remove removed @8
+09:06:03.403684 table@remove removed @5
+09:06:03.403699 table@remove removed @4
+11:05:18.888459 db@close closing
+11:05:18.888761 db@close done T·300.693µs
+=============== Jun 24, 2025 (IDT) ===============
+11:08:01.869026 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:08:01.869629 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+11:08:01.869649 db@open opening
+11:08:01.869875 journal@recovery F·1
+11:08:01.870088 journal@recovery recovering @12
+11:08:01.872954 memdb@flush created L0@15 N·11 S·384B "\x03RL..ion,v37419":"\nla..ime,v37412"
+11:08:01.873202 version@stat F·[1 1] S·1MiB[384B 1MiB] Sc·[0.25 0.02]
+11:08:01.877418 db@janitor F·5 G·1
+11:08:01.877450 db@janitor removing table-11
+11:08:01.877525 db@open done T·7.870046ms
+11:08:02.350489 table@compaction L0·1 -> L1·1 S·1MiB Q·37421
+11:08:02.363115 table@build created L1@18 N·23032 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+11:08:02.363157 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+11:08:02.363843 table@compaction committed F-1 S-380B Ke·0 D·11 T·13.337498ms
+11:08:02.364207 table@remove removed @14
+16:33:46.436135 db@close closing
+16:33:46.436560 db@close done T·420.77µs
+=============== Jun 24, 2025 (IDT) ===============
+19:24:31.745847 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:24:31.746531 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+19:24:31.746545 db@open opening
+19:24:31.746757 journal@recovery F·1
+19:24:31.746883 journal@recovery recovering @16
+19:24:31.748420 memdb@flush created L0@19 N·30 S·582B "\x03RL..ion,v37450":"\x04mg..can,v37423"
+19:24:31.748535 version@stat F·[1 1] S·1MiB[582B 1MiB] Sc·[0.25 0.02]
+19:24:31.753019 db@janitor F·5 G·1
+19:24:31.753029 db@janitor removing table-15
+19:24:31.753068 db@open done T·6.510181ms
+19:24:55.265176 db@close closing
+19:24:55.265945 db@close done T·754.987µs
+=============== Jun 24, 2025 (IDT) ===============
+19:51:27.942507 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+19:51:27.943105 version@stat F·[1 1] S·1MiB[582B 1MiB] Sc·[0.25 0.02]
+19:51:27.943120 db@open opening
+19:51:27.943358 journal@recovery F·1
+19:51:27.943509 journal@recovery recovering @20
+19:51:27.944509 memdb@flush created L0@22 N·2 S·166B "\x04de..can,v37453":"\x04mg..can,v37454"
+19:51:27.944856 version@stat F·[2 1] S·1MiB[748B 1MiB] Sc·[0.50 0.02]
+19:51:27.950279 db@janitor F·5 G·0
+19:51:27.950295 db@open done T·7.169868ms
+19:51:39.435214 db@close closing
+19:51:39.435431 db@close done T·216.775µs
+=============== Jun 24, 2025 (IDT) ===============
+20:02:19.182295 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:02:19.183044 version@stat F·[2 1] S·1MiB[748B 1MiB] Sc·[0.50 0.02]
+20:02:19.183058 db@open opening
+20:02:19.183276 journal@recovery F·1
+20:02:19.183447 journal@recovery recovering @23
+20:02:19.184597 memdb@flush created L0@25 N·2 S·167B "\x04de..can,v37456":"\x04mg..can,v37457"
+20:02:19.186025 version@stat F·[3 1] S·1MiB[915B 1MiB] Sc·[0.75 0.02]
+20:02:19.189228 db@janitor F·6 G·0
+20:02:19.189248 db@open done T·6.184726ms
+20:02:29.680338 db@close closing
+20:02:29.680527 db@close done T·187.843µs
+=============== Jun 24, 2025 (IDT) ===============
+20:27:17.557855 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:27:17.558604 version@stat F·[3 1] S·1MiB[915B 1MiB] Sc·[0.75 0.02]
+20:27:17.558611 db@open opening
+20:27:17.558807 journal@recovery F·1
+20:27:17.558889 journal@recovery recovering @26
+20:27:17.560230 memdb@flush created L0@28 N·2 S·166B "\x04de..can,v37459":"\x04mg..can,v37460"
+20:27:17.560333 version@stat F·[4 1] S·1MiB[1KiB 1MiB] Sc·[1.00 0.02]
+20:27:17.564186 db@janitor F·7 G·0
+20:27:17.564196 db@open done T·5.582264ms
+20:27:17.564255 table@compaction L0·4 -> L1·1 S·1MiB Q·37461
+20:27:17.578908 table@build created L1@31 N·23032 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+20:27:17.578928 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+20:27:17.579655 table@compaction committed F-4 S-1KiB Ke·0 D·36 T·15.384152ms
+20:27:17.579704 table@remove removed @25
+20:27:17.579716 table@remove removed @22
+20:27:17.579723 table@remove removed @19
+20:27:17.579785 table@remove removed @18
+20:27:28.044133 db@close closing
+20:27:28.044357 db@close done T·223.197µs
+=============== Jun 24, 2025 (IDT) ===============
+21:50:14.123459 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:50:14.124053 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+21:50:14.124069 db@open opening
+21:50:14.124280 journal@recovery F·1
+21:50:14.124432 journal@recovery recovering @29
+21:50:14.125622 memdb@flush created L0@32 N·5 S·292B "\x03RL..ion,v37465":"\x04mg..can,v37463"
+21:50:14.126180 version@stat F·[1 1] S·1MiB[292B 1MiB] Sc·[0.25 0.02]
+21:50:14.129124 db@janitor F·5 G·1
+21:50:14.129138 db@janitor removing table-28
+21:50:14.129180 db@open done T·5.107202ms
+21:50:25.865793 db@close closing
+21:50:25.866343 db@close done T·546.881µs
+=============== Jun 24, 2025 (IDT) ===============
+22:06:39.952030 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:06:39.952524 version@stat F·[1 1] S·1MiB[292B 1MiB] Sc·[0.25 0.02]
+22:06:39.952544 db@open opening
+22:06:39.952840 journal@recovery F·1
+22:06:39.952994 journal@recovery recovering @33
+22:06:39.954994 memdb@flush created L0@35 N·2 S·166B "\x04de..can,v37468":"\x04mg..can,v37469"
+22:06:39.955246 version@stat F·[2 1] S·1MiB[458B 1MiB] Sc·[0.50 0.02]
+22:06:39.959719 db@janitor F·5 G·0
+22:06:39.959735 db@open done T·7.186339ms
+22:06:55.453197 db@close closing
+22:06:55.453414 db@close done T·212.752µs
+=============== Jun 24, 2025 (IDT) ===============
+22:41:24.006326 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:41:24.007264 version@stat F·[2 1] S·1MiB[458B 1MiB] Sc·[0.50 0.02]
+22:41:24.007272 db@open opening
+22:41:24.007464 journal@recovery F·1
+22:41:24.007576 journal@recovery recovering @36
+22:41:24.008926 memdb@flush created L0@38 N·2 S·166B "\x04de..can,v37471":"\x04mg..can,v37472"
+22:41:24.008988 version@stat F·[3 1] S·1MiB[624B 1MiB] Sc·[0.75 0.02]
+22:41:24.013507 db@janitor F·6 G·0
+22:41:24.013514 db@open done T·6.240538ms
+22:41:36.499837 db@close closing
+22:41:36.500066 db@close done T·228.112µs
+=============== Jun 24, 2025 (IDT) ===============
+22:53:41.061205 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+22:53:41.062177 version@stat F·[3 1] S·1MiB[624B 1MiB] Sc·[0.75 0.02]
+22:53:41.062201 db@open opening
+22:53:41.062459 journal@recovery F·1
+22:53:41.062728 journal@recovery recovering @39
+22:53:41.066761 memdb@flush created L0@41 N·2 S·166B "\x04de..can,v37474":"\x04mg..can,v37475"
+22:53:41.066943 version@stat F·[4 1] S·1MiB[790B 1MiB] Sc·[1.00 0.02]
+22:53:41.070233 db@janitor F·7 G·0
+22:53:41.070244 db@open done T·8.035822ms
+22:53:41.070347 table@compaction L0·4 -> L1·1 S·1MiB Q·37476
+22:53:41.085917 table@build created L1@44 N·23032 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+22:53:41.085941 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+22:53:41.086537 table@compaction committed F-4 S-791B Ke·0 D·11 T·16.173552ms
+22:53:41.086583 table@remove removed @38
+22:53:41.086599 table@remove removed @35
+22:53:41.086673 table@remove removed @32
+22:53:41.086735 table@remove removed @31
+22:53:51.556050 db@close closing
+22:53:51.556676 db@close done T·614.065µs
+=============== Jun 24, 2025 (IDT) ===============
+23:02:44.536393 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:02:44.537535 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+23:02:44.537550 db@open opening
+23:02:44.537768 journal@recovery F·1
+23:02:44.537885 journal@recovery recovering @42
+23:02:44.539356 memdb@flush created L0@45 N·2 S·166B "\x04de..can,v37477":"\x04mg..can,v37478"
+23:02:44.539919 version@stat F·[1 1] S·1MiB[166B 1MiB] Sc·[0.25 0.02]
+23:02:44.544094 db@janitor F·5 G·1
+23:02:44.544100 db@janitor removing table-41
+23:02:44.544130 db@open done T·6.576573ms
+23:04:09.182221 db@close closing
+23:04:09.182476 db@close done T·254.306µs
+=============== Jun 24, 2025 (IDT) ===============
+23:42:54.056394 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:42:54.057040 version@stat F·[1 1] S·1MiB[166B 1MiB] Sc·[0.25 0.02]
+23:42:54.057059 db@open opening
+23:42:54.057317 journal@recovery F·1
+23:42:54.057540 journal@recovery recovering @46
+23:42:54.059451 memdb@flush created L0@48 N·6 S·325B "\x03RL..ion,v37484":"\nla..ime,v37482"
+23:42:54.059641 version@stat F·[2 1] S·1MiB[491B 1MiB] Sc·[0.50 0.02]
+23:42:54.062908 db@janitor F·5 G·0
+23:42:54.062927 db@open done T·5.855189ms
+23:42:54.531892 table@compaction L0·2 -> L1·1 S·1MiB Q·37486
+23:42:54.545119 table@build created L1@51 N·23032 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+23:42:54.545137 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+23:42:54.545795 table@compaction committed F-2 S-493B Ke·0 D·8 T·13.891508ms
+23:42:54.545984 table@remove removed @45
+23:42:54.546049 table@remove removed @44
+23:43:29.602053 db@close closing
+23:43:29.602723 db@close done T·667.53µs
+=============== Jun 25, 2025 (IDT) ===============
+00:46:30.876406 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:46:30.877077 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+00:46:30.877105 db@open opening
+00:46:30.877364 journal@recovery F·1
+00:46:30.877690 journal@recovery recovering @49
+00:46:30.879425 memdb@flush created L0@52 N·2 S·166B "\x04de..can,v37487":"\x04mg..can,v37488"
+00:46:30.879692 version@stat F·[1 1] S·1MiB[166B 1MiB] Sc·[0.25 0.02]
+00:46:30.885498 db@janitor F·5 G·1
+00:46:30.885519 db@janitor removing table-48
+00:46:30.885582 db@open done T·8.453417ms
+01:08:10.280949 db@close closing
+01:08:10.281931 db@close done T·978.036µs
+=============== Jun 25, 2025 (IDT) ===============
+01:08:12.383072 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:08:12.383391 version@stat F·[1 1] S·1MiB[166B 1MiB] Sc·[0.25 0.02]
+01:08:12.383406 db@open opening
+01:08:12.383577 journal@recovery F·1
+01:08:12.383736 journal@recovery recovering @53
+01:08:12.384761 memdb@flush created L0@55 N·8 S·324B "\x03RL..ion,v37496":"\x04mg..can,v37491"
+01:08:12.384846 version@stat F·[2 1] S·1MiB[490B 1MiB] Sc·[0.50 0.02]
+01:08:12.387330 db@janitor F·5 G·0
+01:08:12.387344 db@open done T·3.933694ms
+01:11:02.162815 db@close closing
+01:11:02.162958 db@close done T·143.099µs
+=============== Jun 25, 2025 (IDT) ===============
+01:11:23.991344 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:11:23.991997 version@stat F·[2 1] S·1MiB[490B 1MiB] Sc·[0.50 0.02]
+01:11:23.992012 db@open opening
+01:11:23.992414 journal@recovery F·1
+01:11:23.993634 journal@recovery recovering @56
+01:11:23.996895 memdb@flush created L0@58 N·6 S·320B "\x03RL..ion,v37503":"\npr..ion,v37499"
+01:11:23.997481 version@stat F·[3 1] S·1MiB[810B 1MiB] Sc·[0.75 0.02]
+01:11:24.001798 db@janitor F·6 G·0
+01:11:24.001824 db@open done T·9.807044ms
+01:11:24.480765 table@compaction L0·3 -> L1·1 S·1MiB Q·37506
+01:11:24.503382 table@build created L1@61 N·23032 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+01:11:24.503423 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+01:11:24.503953 table@compaction committed F-3 S-804B Ke·0 D·16 T·23.165155ms
+01:11:24.504123 table@remove removed @55
+01:11:24.504256 table@remove removed @52
+01:11:24.504412 table@remove removed @51
+02:56:21.730663 db@close closing
+02:56:21.731168 db@close done T·502.56µs
+=============== Jun 25, 2025 (IDT) ===============
+07:48:21.354437 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+07:48:21.355419 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+07:48:21.355444 db@open opening
+07:48:21.355696 journal@recovery F·1
+07:48:21.355965 journal@recovery recovering @59
+07:48:21.359516 memdb@flush created L0@62 N·13 S·390B "\x03RL..ion,v37517":"\x04mg..can,v37507"
+07:48:21.359857 version@stat F·[1 1] S·1MiB[390B 1MiB] Sc·[0.25 0.02]
+07:48:21.363291 db@janitor F·5 G·1
+07:48:21.363305 db@janitor removing table-58
+07:48:21.363365 db@open done T·7.912939ms
+08:09:13.961109 table@compaction L0·1 -> L1·1 S·1MiB Q·37525
+08:09:13.987474 table@build created L1@65 N·23032 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+08:09:13.987514 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+08:09:13.988291 table@compaction committed F-1 S-383B Ke·0 D·13 T·27.07906ms
+08:09:13.988573 table@remove removed @61
+16:26:52.402474 db@close closing
+16:26:52.403558 db@close done T·1.07997ms
+=============== Jun 25, 2025 (IDT) ===============
+16:27:13.029060 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+16:27:13.029895 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+16:27:13.029908 db@open opening
+16:27:13.030249 journal@recovery F·1
+16:27:13.030626 journal@recovery recovering @63
+16:27:13.036006 memdb@flush created L0@66 N·228 S·6KiB "\x00\x00\x00..son,v37670":"\x0e\x00\x00..son,d37731"
+16:27:13.036342 version@stat F·[1 1] S·1MiB[6KiB 1MiB] Sc·[0.25 0.02]
+16:27:13.041242 db@janitor F·5 G·1
+16:27:13.041270 db@janitor removing table-62
+16:27:13.041465 db@open done T·11.548516ms
+16:27:13.522575 table@compaction L0·1 -> L1·1 S·1MiB Q·37748
+16:27:13.536110 table@build created L1@69 N·23037 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+16:27:13.536133 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+16:27:13.536781 table@compaction committed F-1 S-5KiB Ke·0 D·223 T·14.191076ms
+16:27:13.536904 table@remove removed @65
+17:40:09.967163 db@close closing
+17:40:09.967399 db@close done T·235.691µs
+=============== Jun 25, 2025 (IDT) ===============
+17:40:30.974035 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:40:30.975530 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+17:40:30.975576 db@open opening
+17:40:30.976026 journal@recovery F·1
+17:40:30.976461 journal@recovery recovering @67
+17:40:30.979804 memdb@flush created L0@70 N·254 S·9KiB "\x00\x00\x00..son,v37888":"\x0e\x00\x00...md,v37992"
+17:40:30.980951 version@stat F·[1 1] S·1MiB[9KiB 1MiB] Sc·[0.25 0.02]
+17:40:30.985844 db@janitor F·5 G·1
+17:40:30.985869 db@janitor removing table-66
+17:40:30.985953 db@open done T·10.365586ms
+17:40:31.464378 table@compaction L0·1 -> L1·1 S·1MiB Q·38003
+17:40:31.479501 table@build created L1@73 N·23045 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+17:40:31.479538 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+17:40:31.480155 table@compaction committed F-1 S-9KiB Ke·0 D·246 T·15.757513ms
+17:40:31.480513 table@remove removed @69
+20:34:15.507955 db@close closing
+20:34:15.509153 db@close done T·1.189669ms
+=============== Jun 25, 2025 (IDT) ===============
+20:34:47.054068 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:34:47.055104 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+20:34:47.055123 db@open opening
+20:34:47.055370 journal@recovery F·1
+20:34:47.055654 journal@recovery recovering @71
+20:34:47.058805 memdb@flush created L0@74 N·399 S·18KiB "\x00\x00\x00..son,v38115":"\x0e\x00\x00...md,d38364"
+20:34:47.059011 version@stat F·[1 1] S·1MiB[18KiB 1MiB] Sc·[0.25 0.02]
+20:34:47.063462 db@janitor F·5 G·1
+20:34:47.063476 db@janitor removing table-70
+20:34:47.063520 db@open done T·8.391405ms
+20:34:47.543075 table@compaction L0·1 -> L1·1 S·1MiB Q·38404
+20:34:47.561031 table@build created L1@77 N·23060 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+20:34:47.561067 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+20:34:47.561815 table@compaction committed F-1 S-15KiB Ke·0 D·384 T·18.715598ms
+20:34:47.561917 table@remove removed @73
+21:58:58.087929 db@close closing
+21:58:58.088231 db@close done T·300.652µs
+=============== Jun 25, 2025 (IDT) ===============
+21:59:18.136342 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+21:59:18.137419 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+21:59:18.137449 db@open opening
+21:59:18.137707 journal@recovery F·1
+21:59:18.137976 journal@recovery recovering @75
+21:59:18.140136 memdb@flush created L0@78 N·8 S·328B "\x03RL..ion,v38410":"\x04mg..can,v38405"
+21:59:18.140314 version@stat F·[1 1] S·1MiB[328B 1MiB] Sc·[0.25 0.02]
+21:59:18.144406 db@janitor F·5 G·1
+21:59:18.144418 db@janitor removing table-74
+21:59:18.144458 db@open done T·7.001629ms
+22:46:25.396657 table@compaction L0·1 -> L1·1 S·1MiB Q·38424
+22:46:25.396895 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000081.ldb: no such file or directory"
+22:46:26.397447 table@build retrying N·1
+22:46:26.397627 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000082.ldb: no such file or directory"
+22:46:34.397871 table@build retrying N·2
+22:46:34.398015 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000083.ldb: no such file or directory"
+22:46:42.399095 table@build retrying N·3
+22:46:42.399167 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000084.ldb: no such file or directory"
+22:46:50.399641 table@build retrying N·4
+22:46:50.399788 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000085.ldb: no such file or directory"
+22:46:58.400699 table@build retrying N·5
+22:46:58.400980 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000086.ldb: no such file or directory"
+22:47:06.402507 table@build retrying N·6
+22:47:06.402628 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000087.ldb: no such file or directory"
+22:47:14.404794 table@build retrying N·7
+22:47:14.404926 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000088.ldb: no such file or directory"
+22:47:22.406816 table@build retrying N·8
+22:47:22.406954 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000089.ldb: no such file or directory"
+22:47:30.409119 table@build retrying N·9
+22:47:30.409312 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000090.ldb: no such file or directory"
+22:47:38.410502 table@build retrying N·10
+22:47:38.410648 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000091.ldb: no such file or directory"
+22:47:46.412893 table@build retrying N·11
+22:47:46.413128 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000092.ldb: no such file or directory"
+22:47:54.414360 table@build retrying N·12
+22:47:54.414490 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000093.ldb: no such file or directory"
+22:48:02.416430 table@build retrying N·13
+22:48:02.416688 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000094.ldb: no such file or directory"
+22:48:10.417882 table@build retrying N·14
+22:48:10.418121 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000095.ldb: no such file or directory"
+22:48:18.420193 table@build retrying N·15
+22:48:18.420438 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000096.ldb: no such file or directory"
+22:48:26.422422 table@build retrying N·16
+22:48:26.422619 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000097.ldb: no such file or directory"
+22:48:34.424315 table@build retrying N·17
+22:48:34.424436 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000098.ldb: no such file or directory"
+22:48:42.425871 table@build retrying N·18
+22:48:42.426126 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000099.ldb: no such file or directory"
+22:48:50.427382 table@build retrying N·19
+22:48:50.427636 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000100.ldb: no such file or directory"
+22:48:58.429428 table@build retrying N·20
+22:48:58.429632 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000101.ldb: no such file or directory"
+22:49:06.430839 table@build retrying N·21
+22:49:06.431066 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000102.ldb: no such file or directory"
+22:49:14.432696 table@build retrying N·22
+22:49:14.432903 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000103.ldb: no such file or directory"
+22:49:22.434581 table@build retrying N·23
+22:49:22.434929 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000104.ldb: no such file or directory"
+22:49:30.436420 table@build retrying N·24
+22:49:30.436606 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000105.ldb: no such file or directory"
+22:49:38.437537 table@build retrying N·25
+22:49:38.437694 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000106.ldb: no such file or directory"
+22:49:46.439073 table@build retrying N·26
+22:49:46.439373 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000107.ldb: no such file or directory"
+22:49:54.440402 table@build retrying N·27
+22:49:54.440739 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000108.ldb: no such file or directory"
+22:50:02.442462 table@build retrying N·28
+22:50:02.442649 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000109.ldb: no such file or directory"
+22:50:10.444472 table@build retrying N·29
+22:50:10.444641 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000110.ldb: no such file or directory"
+22:50:18.446095 table@build retrying N·30
+22:50:18.446435 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000111.ldb: no such file or directory"
+22:50:26.447795 table@build retrying N·31
+22:50:26.448048 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000112.ldb: no such file or directory"
+22:50:34.449228 table@build retrying N·32
+22:50:34.449635 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000113.ldb: no such file or directory"
+22:50:42.451399 table@build retrying N·33
+22:50:42.451514 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000114.ldb: no such file or directory"
+22:50:50.452462 table@build retrying N·34
+22:50:50.452649 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000115.ldb: no such file or directory"
+22:50:58.453625 table@build retrying N·35
+22:50:58.453853 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000116.ldb: no such file or directory"
+22:51:06.455468 table@build retrying N·36
+22:51:06.455682 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000117.ldb: no such file or directory"
+22:51:14.457503 table@build retrying N·37
+22:51:14.457755 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000118.ldb: no such file or directory"
+22:51:22.459379 table@build retrying N·38
+22:51:22.459539 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000119.ldb: no such file or directory"
+22:51:30.461014 table@build retrying N·39
+22:51:30.461358 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000120.ldb: no such file or directory"
+22:51:38.462947 table@build retrying N·40
+22:51:38.463178 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000121.ldb: no such file or directory"
+22:51:46.464124 table@build retrying N·41
+22:51:46.464458 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000122.ldb: no such file or directory"
+22:51:54.465388 table@build retrying N·42
+22:51:54.465498 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000123.ldb: no such file or directory"
+22:52:02.466435 table@build retrying N·43
+22:52:02.466607 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000124.ldb: no such file or directory"
+22:52:10.467844 table@build retrying N·44
+22:52:10.467979 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000125.ldb: no such file or directory"
+22:52:18.468946 table@build retrying N·45
+22:52:18.469089 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000126.ldb: no such file or directory"
+22:52:26.469653 table@build retrying N·46
+22:52:26.469815 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000127.ldb: no such file or directory"
+22:52:34.470567 table@build retrying N·47
+22:52:34.470783 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000128.ldb: no such file or directory"
+22:52:42.472135 table@build retrying N·48
+22:52:42.472389 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000129.ldb: no such file or directory"
+22:52:50.473204 table@build retrying N·49
+22:52:50.473453 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000130.ldb: no such file or directory"
+22:52:58.473801 table@build retrying N·50
+22:52:58.474024 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000131.ldb: no such file or directory"
+22:53:06.474461 table@build retrying N·51
+22:53:06.474798 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000132.ldb: no such file or directory"
+22:53:14.475210 table@build retrying N·52
+22:53:14.475407 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000133.ldb: no such file or directory"
+22:53:22.476036 table@build retrying N·53
+22:53:22.476299 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000134.ldb: no such file or directory"
+22:53:30.476555 table@build retrying N·54
+22:53:30.476786 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000135.ldb: no such file or directory"
+22:53:38.477626 table@build retrying N·55
+22:53:38.477865 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000136.ldb: no such file or directory"
+22:53:46.478562 table@build retrying N·56
+22:53:46.478747 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000137.ldb: no such file or directory"
+22:53:54.479490 table@build retrying N·57
+22:53:54.479602 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000138.ldb: no such file or directory"
+22:54:02.480455 table@build retrying N·58
+22:54:02.480594 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000139.ldb: no such file or directory"
+22:54:10.480809 table@build retrying N·59
+22:54:10.481062 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000140.ldb: no such file or directory"
+22:54:18.482124 table@build retrying N·60
+22:54:18.482301 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000141.ldb: no such file or directory"
+22:54:26.483605 table@build retrying N·61
+22:54:26.483967 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000142.ldb: no such file or directory"
+22:54:34.485320 table@build retrying N·62
+22:54:34.485563 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000143.ldb: no such file or directory"
+22:54:42.485781 table@build retrying N·63
+22:54:42.485983 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000144.ldb: no such file or directory"
+22:54:50.486130 table@build retrying N·64
+22:54:50.486291 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000145.ldb: no such file or directory"
+22:54:58.486751 table@build retrying N·65
+22:54:58.486984 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000146.ldb: no such file or directory"
+22:55:06.487682 table@build retrying N·66
+22:55:06.487848 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000147.ldb: no such file or directory"
+22:55:14.488630 table@build retrying N·67
+22:55:14.488786 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000148.ldb: no such file or directory"
+22:55:22.492854 table@build retrying N·68
+22:55:22.493087 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000149.ldb: no such file or directory"
+22:55:30.495355 table@build retrying N·69
+22:55:30.495582 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000150.ldb: no such file or directory"
+22:55:38.499797 table@build retrying N·70
+22:55:38.500016 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000151.ldb: no such file or directory"
+22:55:46.503399 table@build retrying N·71
+22:55:46.503527 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000152.ldb: no such file or directory"
+22:55:54.507578 table@build retrying N·72
+22:55:54.507777 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000153.ldb: no such file or directory"
+22:56:02.511479 table@build retrying N·73
+22:56:02.511691 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000154.ldb: no such file or directory"
+22:56:10.514605 table@build retrying N·74
+22:56:10.514949 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000155.ldb: no such file or directory"
+22:56:18.519312 table@build retrying N·75
+22:56:18.519472 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000156.ldb: no such file or directory"
+22:56:26.523258 table@build retrying N·76
+22:56:26.523432 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000157.ldb: no such file or directory"
+22:56:34.527073 table@build retrying N·77
+22:56:34.527281 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000158.ldb: no such file or directory"
+22:56:42.530731 table@build retrying N·78
+22:56:42.530874 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000159.ldb: no such file or directory"
+22:56:50.531590 table@build retrying N·79
+22:56:50.531801 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000160.ldb: no such file or directory"
+22:56:58.535273 table@build retrying N·80
+22:56:58.535381 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000161.ldb: no such file or directory"
+22:57:06.538441 table@build retrying N·81
+22:57:06.538671 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000162.ldb: no such file or directory"
+22:57:14.542614 table@build retrying N·82
+22:57:14.542904 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000163.ldb: no such file or directory"
+22:57:22.545470 table@build retrying N·83
+22:57:22.545675 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000164.ldb: no such file or directory"
+22:57:30.548321 table@build retrying N·84
+22:57:30.548506 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000165.ldb: no such file or directory"
+22:57:38.551632 table@build retrying N·85
+22:57:38.551821 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000166.ldb: no such file or directory"
+22:57:46.555181 table@build retrying N·86
+22:57:46.555413 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000167.ldb: no such file or directory"
+22:57:54.558632 table@build retrying N·87
+22:57:54.558834 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000168.ldb: no such file or directory"
+22:58:02.561965 table@build retrying N·88
+22:58:02.562159 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000169.ldb: no such file or directory"
+22:58:10.565570 table@build retrying N·89
+22:58:10.565804 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000170.ldb: no such file or directory"
+22:58:18.568595 table@build retrying N·90
+22:58:18.568835 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000171.ldb: no such file or directory"
+22:58:26.569081 table@build retrying N·91
+22:58:26.569398 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000172.ldb: no such file or directory"
+22:58:34.572466 table@build retrying N·92
+22:58:34.572712 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000173.ldb: no such file or directory"
+22:58:42.575285 table@build retrying N·93
+22:58:42.575529 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000174.ldb: no such file or directory"
+22:58:50.578519 table@build retrying N·94
+22:58:50.578783 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000175.ldb: no such file or directory"
+22:58:58.581557 table@build retrying N·95
+22:58:58.581822 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000176.ldb: no such file or directory"
+22:59:06.584737 table@build retrying N·96
+22:59:06.584981 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000177.ldb: no such file or directory"
+22:59:14.588376 table@build retrying N·97
+22:59:14.588669 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000178.ldb: no such file or directory"
+22:59:22.591432 table@build retrying N·98
+22:59:22.591686 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000179.ldb: no such file or directory"
+22:59:30.594478 table@build retrying N·99
+22:59:30.594678 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000180.ldb: no such file or directory"
+22:59:38.597214 table@build retrying N·100
+22:59:38.597454 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000181.ldb: no such file or directory"
+22:59:46.599345 table@build retrying N·101
+22:59:46.599583 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000182.ldb: no such file or directory"
+22:59:54.601854 table@build retrying N·102
+22:59:54.602085 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000183.ldb: no such file or directory"
+23:00:02.603281 table@build retrying N·103
+23:00:02.603609 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000184.ldb: no such file or directory"
+23:00:10.603824 table@build retrying N·104
+23:00:10.604138 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000185.ldb: no such file or directory"
+23:00:18.606536 table@build retrying N·105
+23:00:18.606763 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000186.ldb: no such file or directory"
+23:00:26.607949 table@build retrying N·106
+23:00:26.608595 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000187.ldb: no such file or directory"
+23:00:34.611406 table@build retrying N·107
+23:00:34.611652 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000188.ldb: no such file or directory"
+23:00:42.614294 table@build retrying N·108
+23:00:42.614508 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000189.ldb: no such file or directory"
+23:00:50.617400 table@build retrying N·109
+23:00:50.617628 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000190.ldb: no such file or directory"
+23:00:58.619843 table@build retrying N·110
+23:00:58.620026 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000191.ldb: no such file or directory"
+23:01:06.620490 table@build retrying N·111
+23:01:06.620805 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000192.ldb: no such file or directory"
+23:01:14.623028 table@build retrying N·112
+23:01:14.623382 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000193.ldb: no such file or directory"
+23:01:22.625298 table@build retrying N·113
+23:01:22.625575 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000194.ldb: no such file or directory"
+23:01:30.627268 table@build retrying N·114
+23:01:30.627703 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000195.ldb: no such file or directory"
+23:01:38.629491 table@build retrying N·115
+23:01:38.629691 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000196.ldb: no such file or directory"
+23:01:46.631665 table@build retrying N·116
+23:01:46.631919 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000197.ldb: no such file or directory"
+23:01:54.634299 table@build retrying N·117
+23:01:54.634482 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000198.ldb: no such file or directory"
+23:02:02.636532 table@build retrying N·118
+23:02:02.636764 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000199.ldb: no such file or directory"
+23:02:10.637075 table@build retrying N·119
+23:02:10.637967 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000200.ldb: no such file or directory"
+23:02:18.639715 table@build retrying N·120
+23:02:18.639933 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000201.ldb: no such file or directory"
+23:02:26.641476 table@build retrying N·121
+23:02:26.641630 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000202.ldb: no such file or directory"
+23:02:34.642850 table@build retrying N·122
+23:02:34.643117 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000203.ldb: no such file or directory"
+23:02:42.644439 table@build retrying N·123
+23:02:42.644629 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000204.ldb: no such file or directory"
+23:02:50.645471 table@build retrying N·124
+23:02:50.645685 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000205.ldb: no such file or directory"
+23:02:58.647091 table@build retrying N·125
+23:02:58.647524 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000206.ldb: no such file or directory"
+23:03:06.648794 table@build retrying N·126
+23:03:06.649054 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000207.ldb: no such file or directory"
+23:03:14.650035 table@build retrying N·127
+23:03:14.650325 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000208.ldb: no such file or directory"
+23:03:22.651470 table@build retrying N·128
+23:03:22.651709 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000209.ldb: no such file or directory"
+23:03:30.653259 table@build retrying N·129
+23:03:30.653543 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000210.ldb: no such file or directory"
+23:03:38.654006 table@build retrying N·130
+23:03:38.654207 table@build error I·1 "open /home/lf/.config/syncthing/index-v0.14.0.db/000211.ldb: no such file or directory"
+23:03:46.655009 table@build retrying N·131
+23:03:46.673226 table@build created L1@212 N·23060 S·1MiB "\x00\x00\x00..ore,v13561":"\x0e\x00\x00...md,v20470"
+23:03:46.673262 version@stat F·[0 1] S·1MiB[0B 1MiB] Sc·[0.00 0.02]
+23:03:46.674120 table@compaction committed F-1 S-334B Ke·0 D·8 T·37.421809ms
+23:03:46.674278 table@remove removed @77

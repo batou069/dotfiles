@@ -1,0 +1,67 @@
+{
+	"AI3 Header": {
+		"prefix": "ai3",
+		"body": [
+			"\"\"\"",
+			"Title: ${1:'Enter a Title'}",
+			"${2|Exercise,Quiz|}: $3",
+			"Description: ${4:'And now a description'}",
+			"",
+			"Author: Laurent Flaster",
+			"Reviewer: ${6:'Lucky who?'}",
+			"",
+			"Infinity Labs R&D AI3",
+			"\"\"\"",
+			"",
+			"${7:import} $0"
+		],
+		"description": "Inser AI3 Doc string."
+	},
+	"if __name__ == __main__:": {
+		"prefix": "ifname",
+		"body": [
+			"if __name__ == \"__main__\":\n\t$1"
+		],
+		"description": "Inserts if __name__ == '__main__' block with cursor indented."
+	},
+	"Python Class": {
+		"prefix": "class",
+		"body": [
+			"class ${1:ClassName}:",
+			"\tdef __init__(self, $3):",
+			"\t\t$4"
+		],
+		"description": "Python class with inheritance choice"
+	},
+	"Constant": {
+		"prefix": "const",
+		"body": [
+			"${1:CONST_NAME} = ${2:value} # ${1:/upcase}",
+			"$3"
+		],
+		"description": "Constant with uppercase comment"
+	},
+	"Property": {
+		"prefix": "prop",
+		"body": [
+			"@property",
+			"def ${1:name}(self):",
+			"\treturn self._${1:name}",
+			"",
+			"@${1:name}.setter",
+			"def ${1:name}(self, value):",
+			"\tself._${1:name} = value",
+			"$2"
+		],
+		"description": "Python property with getter and setter"
+	},
+	"Test Function": {
+		"prefix": "test",
+		"body": [
+			"def test_${1:name}_${2|unit,integration|}():",
+			"\t${3:assert True}",
+			"$4"
+		],
+		"description": "Test function with type choice"
+	}
+}

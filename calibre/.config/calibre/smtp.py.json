@@ -1,0 +1,18 @@
+{
+  "accounts": {
+    "laulau069_aqudk9@kindle.com": [
+      "EPUB, TPZ",
+      true,
+      true
+    ]
+  },
+  "aliases": {},
+  "encryption": "TLS",
+  "from_": "philrogan524@gmx.com",
+  "relay_host": "mail.gmx.com",
+  "relay_password": "4465696e2454616e6465393837",
+  "relay_port": 587,
+  "relay_username": "philrogan524",
+  "subjects": {},
+  "tags": {}
+}
