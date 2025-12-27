@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 # This script for selecting wallpapers (SUPER W)
 
@@ -30,7 +30,7 @@ rofi_theme="$HOME/.config/rofi/config-wallpaper.rasi"
 focused_monitor=$(hyprctl monitors -j | jq -r '.[] | select(.focused) | .name')
 
 # Ensure focused_monitor is detected
-if [[ -z "$focused_monitor" ]]; then
+if [[ -z $focused_monitor ]]; then
   notify-send -i "$iDIR/error.png" "E-R-R-O-R" "Could not detect focused monitor"
   exit 1
 fi
@@ -78,16 +78,16 @@ menu() {
 
   for pic_path in "${sorted_options[@]}"; do
     pic_name=$(basename "$pic_path")
-    if [[ "$pic_name" =~ \.gif$ ]]; then
+    if [[ $pic_name =~ \.gif$ ]]; then
       cache_gif_image="$HOME/.cache/gif_preview/${pic_name}.png"
-      if [[ ! -f "$cache_gif_image" ]]; then
+      if [[ ! -f $cache_gif_image ]]; then
         mkdir -p "$HOME/.cache/gif_preview"
         magick "$pic_path[0]" -resize 1920x1080 "$cache_gif_image"
       fi
       printf "%s\x00icon\x1f%s\n" "$pic_name" "$cache_gif_image"
-    elif [[ "$pic_name" =~ \.(mp4|mkv|mov|webm|MP4|MKV|MOV|WEBM)$ ]]; then
+    elif [[ $pic_name =~ \.(mp4|mkv|mov|webm|MP4|MKV|MOV|WEBM)$ ]]; then
       cache_preview_image="$HOME/.cache/video_preview/${pic_name}.png"
-      if [[ ! -f "$cache_preview_image" ]]; then
+      if [[ ! -f $cache_preview_image ]]; then
         mkdir -p "$HOME/.cache/video_preview"
         ffmpeg -v error -y -i "$pic_path" -ss 00:00:01.000 -vframes 1 "$cache_preview_image"
       fi
@@ -137,7 +137,7 @@ modify_startup_config() {
   local startup_config="$HOME/.config/hypr/UserConfigs/Startup_Apps.conf"
 
   # Check if it's a live wallpaper (video)
-  if [[ "$selected_file" =~ \.(mp4|mkv|mov|webm)$ ]]; then
+  if [[ $selected_file =~ \.(mp4|mkv|mov|webm)$ ]]; then
     # For video wallpapers:
     sed -i '/^\s*exec-once\s*=\s*swww-daemon\s*--format\s*xrgb\s*$/s/^/\#/' "$startup_config"
     sed -i '/^\s*#\s*exec-once\s*=\s*mpvpaper\s*.*$/s/^#\s*//;' "$startup_config"
@@ -199,13 +199,13 @@ main() {
   choice=$(echo "$choice" | xargs)
   RANDOM_PIC_NAME=$(echo "$RANDOM_PIC_NAME" | xargs)
 
-  if [[ -z "$choice" ]]; then
+  if [[ -z $choice ]]; then
     echo "No choice selected. Exiting."
     exit 0
   fi
 
   # Handle random selection correctly
-  if [[ "$choice" == "$RANDOM_PIC_NAME" ]]; then
+  if [[ $choice == "$RANDOM_PIC_NAME" ]]; then
     choice=$(basename "$RANDOM_PIC")
   fi
 
@@ -214,7 +214,7 @@ main() {
   # Search for the selected file in the wallpapers directory, including subdirectories
   selected_file=$(find "$wallDIR" -iname "$choice_basename.*" -print -quit)
 
-  if [[ -z "$selected_file" ]]; then
+  if [[ -z $selected_file ]]; then
     echo "File not found. Selected choice: $choice"
     exit 1
   fi
@@ -223,7 +223,7 @@ main() {
   modify_startup_config "$selected_file"
 
   # **CHECK FIRST** if it's a video or an image **before calling any function**
-  if [[ "$selected_file" =~ \.(mp4|mkv|mov|webm|MP4|MKV|MOV|WEBM)$ ]]; then
+  if [[ $selected_file =~ \.(mp4|mkv|mov|webm|MP4|MKV|MOV|WEBM)$ ]]; then
     apply_video_wallpaper "$selected_file"
   else
     apply_image_wallpaper "$selected_file"

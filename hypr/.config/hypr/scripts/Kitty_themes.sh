@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  #
 # Kitty Themes Source https://github.com/dexpota/kitty-themes #
 
@@ -77,7 +77,7 @@ current_active_theme_name=$(awk -F'include ./kitty-themes/|\\.conf' '/^[[:space:
 
 if [ -n "$current_active_theme_name" ]; then
   for i in "${!available_theme_names[@]}"; do
-    if [[ "${available_theme_names[$i]}" == "$current_active_theme_name" ]]; then
+    if [[ ${available_theme_names[$i]} == "$current_active_theme_name" ]]; then
       current_selection_index=$i
       break
     fi
@@ -112,7 +112,7 @@ while true; do
   rofi_exit_code=$?
 
   if [ $rofi_exit_code -eq 0 ]; then
-    if [[ "$chosen_index_from_rofi" =~ ^[0-9]+$ ]] && [ "$chosen_index_from_rofi" -lt "${#available_theme_names[@]}" ]; then
+    if [[ $chosen_index_from_rofi =~ ^[0-9]+$ ]] && [ "$chosen_index_from_rofi" -lt "${#available_theme_names[@]}" ]; then
       current_selection_index="$chosen_index_from_rofi"
     else
       :

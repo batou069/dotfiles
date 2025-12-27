@@ -1,0 +1,16 @@
+/*
+ I decided on the Brush Script MT cursive font for now. Works better for me than FlottFlott.
+*/
+    .mtk3,
+    .mtk13,
+    .mtk16 {
+      margin-left: 1px;
+      font-family: "Maple Mono NF Light Italic";
+      font-size: 1.6em;
+    }
+
+    .mtk4 {
+      font-family: "Maple Mono NF Light Italic";
+      font-size: 1.4em;
+    }
+    }

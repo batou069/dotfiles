@@ -102,19 +102,28 @@ return {
   "goolord/alpha-nvim",
   event = "VimEnter",
   dependencies = { "nvim-tree/nvim-web-devicons" },
-  opts = function(_, dashboard)
-    if vim.fn.argc() ~= 0 then
-      return false
+  config = function()
+    local alpha = require("alpha")
+    local dashboard = require("alpha.themes.dashboard")
+
+    -- Set random color for the header
+    math.randomseed(os.time() + math.floor(os.clock() * 1000000))
+    local random_ctermfg = math.random(0, 15)
+    vim.api.nvim_set_hl(0, "AlphaHeader", { ctermfg = random_ctermfg })
+
+    -- Set random header
+    local random_index = math.random(1, #MY_CUSTOM_HEADERS)
+    dashboard.section.header.val = MY_CUSTOM_HEADERS[random_index]
+
+    -- Set the highlight group for the header
+    dashboard.section.header.opts.hl = "AlphaHeader"
+
+    -- Disable dashboard if opening a file
+    if vim.fn.argc() > 0 then
+      dashboard.config.opts.noautocmd = true
     end
 
-    math.randomseed(os.time() + math.floor(os.clock() * 1000000))
-
-    local random_index = math.random(1, #MY_CUSTOM_HEADERS)
-    local chosen_header_val = MY_CUSTOM_HEADERS[random_index]
-    local random_ctermfg = math.random(0, 15)
-
-    dashboard.section.header.val = chosen_header_val
-    dashboard.section.header.opts.hl = string.format("AlphaHeader ctermfg=%d", random_ctermfg)
-    return dashboard
+    -- Setup alpha
+    alpha.setup(dashboard.config)
   end,
 }

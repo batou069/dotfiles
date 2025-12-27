@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Screenshots scripts
 
@@ -25,7 +25,7 @@ notify_view() {
     if [[ "$1" == "active" ]]; then
         if [[ -e "${active_window_path}" ]]; then
 			"${sDIR}/Sounds.sh" --screenshot        
-            resp=$(timeout 5 ${notify_cmd_shot_win} " Screenshot of:" " ${active_window_class} Saved.")
+            resp=$(timeout 15 ${notify_cmd_shot_win} " Screenshot of:" " ${active_window_class} Saved.")
             case "$resp" in
 				action1)
 					xdg-open "${active_window_path}" &
@@ -39,12 +39,13 @@ notify_view() {
             "${sDIR}/Sounds.sh" --error
         fi
 
-    elif [[ "$1" == "swappy" ]]; then
+    elif [[ "$1" == "satty" ]]; then
 		"${sDIR}/Sounds.sh" --screenshot
-		resp=$(${notify_cmd_shot} " Screenshot:" " Captured by Swappy")
+		resp=$(timeout 15 ${notify_cmd_shot} " Screenshot:" " Captured by Swappy")
 		case "$resp" in
 			action1)
-				swappy -f - <"$tmpfile"
+				# swappy -f - <"$tmpfile"
+				satty --filename "$tmpfile"
 				;;
 			action2)
 				rm "$tmpfile"
@@ -55,7 +56,7 @@ notify_view() {
         local check_file="${dir}/${file}"
         if [[ -e "$check_file" ]]; then
             "${sDIR}/Sounds.sh" --screenshot
-            resp=$(timeout 5 ${notify_cmd_shot} " Screenshot" " Saved")
+            resp=$(timeout 15 ${notify_cmd_shot} " Screenshot" " Saved")
 			case "$resp" in
 				action1)
 					xdg-open "${check_file}" &
@@ -107,10 +108,16 @@ shotwin() {
 }
 
 shotarea() {
-	tmpfile=$(mktemp)
-	grim -g "$(slurp)" - >"$tmpfile"
+	selection=$(slurp)
+	if [ -z "$selection" ]; then
+		${notify_cmd_NOT} "Screenshot" " selection cancelled."
+		"${sDIR}/Sounds.sh" --error
+		return
+	fi
 
-  # Copy with saving
+	tmpfile=$(mktemp)
+	grim -g "$selection" - >"$tmpfile"
+
 	if [[ -s "$tmpfile" ]]; then
 		wl-copy <"$tmpfile"
 		mv "$tmpfile" "$dir/$file"
@@ -128,15 +135,25 @@ shotactive() {
     notify_view "active"
 }
 
-shotswappy() {
-	tmpfile=$(mktemp)
-	grim -g "$(slurp)" - >"$tmpfile" 
+shotsatty() {
+	selection=$(slurp)
+	if [ -z "$selection" ]; then
+		${notify_cmd_NOT} "Screenshot" " selection cancelled."
+		"${sDIR}/Sounds.sh" --error
+		return
+	fi
 
-  # Copy without saving
-  if [[ -s "$tmpfile" ]]; then
+	tmpfile=$(mktemp)
+	grim -g "$selection" - >"$tmpfile" 
+
+	if [[ -s "$tmpfile" ]]; then
 		wl-copy <"$tmpfile"
-    notify_view "swappy"
-  fi
+		notify_view "satty"
+	else
+		${notify_cmd_NOT} "Screenshot" " could not be taken."
+		"${sDIR}/Sounds.sh" --error
+		rm "$tmpfile"
+	fi
 }
 
 if [[ ! -d "$dir" ]]; then
@@ -155,10 +172,10 @@ elif [[ "$1" == "--area" ]]; then
 	shotarea
 elif [[ "$1" == "--active" ]]; then
 	shotactive
-elif [[ "$1" == "--swappy" ]]; then
-	shotswappy
+elif [[ "$1" == "--satty" ]]; then
+	shotsatty
 else
-	echo -e "Available Options : --now --in5 --in10 --win --area --active --swappy"
+	echo -e "Available Options : --now --in5 --in10 --win --area --active --satty"
 fi
 
 exit 0

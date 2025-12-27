@@ -45,6 +45,16 @@ autocmd("BufEnter", {
   command = "set fo-=c fo-=r fo-=o",
 })
 
+
+autocmd({'BufEnter', 'BufWinEnter'}, {
+  pattern = {'*.xsh'},
+  callback = function ()
+    vim.opt_local.syntax = 'python'
+  end,
+})
+
+
+
 -----------------------------------------------------------
 -- Settings for filetypes
 -----------------------------------------------------------
@@ -61,7 +71,7 @@ autocmd("Filetype", {
 augroup("setIndent", { clear = true })
 autocmd("Filetype", {
   group = "setIndent",
-  pattern = { "xml", "html", "xhtml", "css", "scss", "javascript", "typescript", "yaml", "lua" },
+  pattern = { "xml", "html", "xhtml", "css", "scss", "javascript", "typescript", "yaml", "lua", "nix"},
   command = "setlocal shiftwidth=2 tabstop=2",
 })
 
@@ -92,7 +102,7 @@ autocmd("BufLeave", {
 
 -- go to last loc when opening a buffer
 -- this mean that when you open a file, you will be at the last position
-vim.api.nvim_create_autocmd("BufReadPost", {
+autocmd("BufReadPost", {
   callback = function()
     local mark = vim.api.nvim_buf_get_mark(0, '"')
     local lcount = vim.api.nvim_buf_line_count(0)
@@ -103,7 +113,7 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 })
 
 -- close some filetypes with <q>
-vim.api.nvim_create_autocmd("FileType", {
+autocmd("FileType", {
   group = vim.api.nvim_create_augroup("close_with_q", { clear = true }),
   pattern = {
     "PlenaryTestPopup",

@@ -1,14 +1,11 @@
 local sql_ft = { "sql", "mysql", "plsql" }
 
 return {
-  --          ╭─────────────────────────────────────────────────────────╮
-  --          │                        Debugging                        │
-  --          ╰─────────────────────────────────────────────────────────╯
+  -- SQL Plugins
   {
     "tpope/vim-dadbod",
     cmd = "DB",
   },
-
   {
     "kristijanhusak/vim-dadbod-ui",
     cmd = { "DBUI", "DBUIToggle", "DBUIAddConnection", "DBUIFindBuffer" },
@@ -27,7 +24,6 @@ return {
       vim.g.db_ui_execute_on_save = false
     end,
   },
-
   {
     "kristijanhusak/vim-dadbod-completion",
     dependencies = "tpope/vim-dadbod",
@@ -48,20 +44,16 @@ return {
       })
     end,
   },
-  --          ╭─────────────────────────────────────────────────────────╮
-  --          │                        Debugging                        │
-  --          ╰─────────────────────────────────────────────────────────╯
 
+  -- Debugging Plugins
   {
     "nvim-neotest/neotest-python",
   },
-
   {
     "mfussenegger/nvim-dap-python",
-    -- stylua: ignore
     keys = {
       { "<leader>dPt", function() require('dap-python').test_method() end, desc = "Debug Method", ft = "python" },
-      { "<leader>dPc", function() require('dap-python').test_class() end,  desc = "Debug Class",  ft = "python" },
+      { "<leader>dPc", function() require('dap-python').test_class() end, desc = "Debug Class", ft = "python" },
     },
     config = function()
       if vim.fn.has("win32") == 1 then
@@ -71,7 +63,6 @@ return {
       end
     end,
   },
-
   {
     "nvim-neotest/neotest",
     optional = true,
@@ -80,42 +71,15 @@ return {
     },
     opts = {
       adapters = {
-        ["neotest-python"] = {
-          -- Here you can specify the settings for the adapter, i.e.
-          -- runner = "pytest",
-          -- python = ".venv/bin/python",
-        },
+        ["neotest-python"] = {},
       },
     },
   },
-
-  {
-    "mfussenegger/nvim-dap",
-    optional = true,
-    dependencies = {
-      "mfussenegger/nvim-dap-python",
-      -- stylua: ignore
-      keys = {
-        { "<leader>dPt", function() require('dap-python').test_method() end, desc = "Debug Method", ft = "python" },
-        { "<leader>dPc", function() require('dap-python').test_class() end,  desc = "Debug Class",  ft = "python" },
-      },
-      config = function()
-        if vim.fn.has("win32") == 1 then
-          require("dap-python").setup(LazyVim.get_pkg_path("debugpy", "/venv/Scripts/pythonw.exe"))
-        else
-          require("dap-python").setup(LazyVim.get_pkg_path("debugpy", "/venv/bin/python"))
-        end
-      end,
-    },
-  },
-
   {
     "shunsambongi/neotest-testthat",
   },
 
-  --          ╭─────────────────────────────────────────────────────────╮
-  --          │                  LSP & Autocompletion                   │
-  --          ╰─────────────────────────────────────────────────────────╯
+  -- LSP & Autocompletion
   {
     "hrsh7th/nvim-cmp",
     dependencies = { "R-nvim/cmp-r" },
@@ -157,62 +121,30 @@ return {
       })
     end,
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
-      -- add tsx and treesitter
       vim.list_extend(opts.ensure_installed, {
-        "tsx",
-        "ninja",
-        "rst",
-        "r",
-        "rnoweb",
-        "sql",
-        "bash",
-        "html",
-        "javascript",
-        "json",
-        "lua",
-        "markdown",
-        "markdown_inline",
-        "python",
-        "query",
-        "regex",
-        "tsx",
-        "typescript",
-        "vim",
-        "yaml",
+        "tsx", "ninja", "rst", "r", "rnoweb", "sql", "bash", "html",
+        "javascript", "json", "lua", "markdown", "markdown_inline",
+        "python", "query", "regex", "typescript", "vim", "yaml",
       })
     end,
   },
-
   {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
         ruff = {
           cmd_env = { RUFF_TRACE = "messages" },
-          init_options = {
-            settings = {
-              logLevel = "error",
-            },
-          },
+          init_options = { settings = { logLevel = "error" } },
           keys = {
-            {
-              "<leader>co",
-              LazyVim.lsp.action["source.organizeImports"],
-              desc = "Organize Imports",
-            },
+            { "<leader>co", LazyVim.lsp.action["source.organizeImports"], desc = "Organize Imports" },
           },
         },
         ruff_lsp = {
           keys = {
-            {
-              "<leader>co",
-              LazyVim.lsp.action["source.organizeImports"],
-              desc = "Organize Imports",
-            },
+            { "<leader>co", LazyVim.lsp.action["source.organizeImports"], desc = "Organize Imports" },
           },
         },
         r_language_server = {
@@ -232,15 +164,7 @@ return {
         end,
       },
     },
-    opts = function(_, opts)
-      local servers = { "pyright", "basedpyright", "ruff", "ruff_lsp" }
-      for _, server in ipairs(servers) do
-        opts.servers[server] = opts.servers[server] or {}
-        opts.servers[server].enabled = server == "ruff" or server == "ruff_lsp"
-      end
-    end,
   },
-
   {
     "mfussenegger/nvim-lint",
     optional = true,
@@ -251,7 +175,6 @@ return {
       end
     end,
   },
-
   {
     "stevearc/conform.nvim",
     optional = true,
@@ -285,7 +208,6 @@ return {
       },
     },
   },
-
   {
     "saghen/blink.cmp",
     optional = true,
@@ -299,93 +221,9 @@ return {
     },
     dependencies = { "kristijanhusak/vim-dadbod-completion" },
   },
-  --          ╭─────────────────────────────────────────────────────────╮
-  --          │                  UI Stuff                               │
-  --          ╰─────────────────────────────────────────────────────────╯
-  --          ╭─────────────────────────────────────────────────────────╮
-  --          │                            {                            │
-  --          │               local logo = table.concat({               │
-  --          │"  ███▄    █ ▓█████  ▒█████   ██▒   █▓ ██▓ ███▄ ▄███▓ ", │
-  --          │"  ██ ▀█   █ ▓█   ▀ ▒██▒  ██▒▓██░   █▒▓██▒▓██▒▀█▀ ██▒ ", │
-  --          │" ▓██  ▀█ ██▒▒███   ▒██░  ██▒ ▓██  █▒░▒██▒▓██    ▓██░ ", │
-  --          │" ▓██▒  ▐▌██▒▒▓█  ▄ ▒██   ██░  ▒██ █░░░██░▒██    ▒██  ", │
-  --          │" ▒██░   ▓██░░▒████▒░ ████▓▒░   ▒▀█░  ░██░▒██▒   ░██▒ ", │
-  --          │" ░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒░▒░▒░    ░ ▐░  ░▓  ░ ▒░   ░  ░ ", │
-  --          │" ░ ░░   ░ ▒░ ░ ░  ░  ░ ▒ ▒░    ░ ░░   ▒ ░░  ░      ░ ", │
-  --          │"    ░   ░ ░    ░   ░ ░ ░ ▒       ░░   ▒ ░░      ░    ", │
-  --          │"          ░    ░  ░    ░ ░        ░   ░         ░    ", │
-  --          │"                                 ░                   ", │
-  --          │"                                                     ", │
-  --          │"                ████   ██  ██████████████           Z ",│
-  --          │"               ██  ██        ██  ██  ██         Z     ",│
-  --          │"              ██    ██ ██    ██  ██  ██      z        ",│
-  --          │"              ████████ ██    ██  ██  ██    z          ",│
-  --          │"              ██    ██ ██  ██████████████            ", │
-  --          │"                                                     ", │
-  --          │                        }, "\n")                         │
-  --          │                           },                            │
-  --          ╰─────────────────────────────────────────────────────────╯
-
   { "R-nvim/cmp-r" },
-
   {
     "mason-org/mason.nvim",
     opts = { ensure_installed = { "markdownlint-cli2", "markdown-toc", "sqlfluff" } },
   },
-
-  -- {
-  --   "iamcco/markdown-preview.nvim",
-  --   cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-  --   build = function()
-  --     require("lazy").load({ plugins = { "markdown-preview.nvim" } })
-  --     vim.fn["mkdp#util#install"]()
-  --   end,
-  --   keys = {
-  --     {
-  --       "<leader>cp",
-  --       ft = "markdown",
-  --       "<cmd>MarkdownPreviewToggle<cr>",
-  --       desc = "Markdown Preview",
-  --     },
-  --   },
-  --   config = function()
-  --     vim.cmd([[do FileType]])
-  --   end,
-  -- },
-
-  --  { "markdown-preview.nvim" },
-  -- {
-  --   "MeanderingProgrammer/render-markdown.nvim",
-  --   opts = {
-  --     code = {
-  --       sign = false,
-  --       width = "block",
-  --       right_pad = 1,
-  --     },
-  --     heading = {
-  --       sign = false,
-  --       icons = {},
-  --     },
-  --     checkbox = {
-  --       enabled = false,
-  --     },
-  --   },
-  --   ft = { "markdown", "norg", "rmd", "org", "codecompanion" },
-  --   config = function(_, opts)
-  --     require("render-markdown").setup(opts)
-  --     Snacks.toggle({
-  --       name = "Render Markdown",
-  --       get = function()
-  --         return require("render-markdown.state").enabled
-  --       end,
-  --       set = function(enabled)
-  --         local m = require("render-markdown")
-  --         if enabled then
-  --           m.enable()
-  --         else
-  --           m.disable()
-  --         end
-  --       end,
-  --     }):map("<leader>um")
-  --   end,
 }

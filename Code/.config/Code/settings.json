@@ -1,0 +1,12 @@
+{
+  "editor.fontFamily": "'Fira Code', Consolas, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "vscode_custom_css.imports": [
+    "file:///home/lf/.config/Code/style.css"
+  "[docker-compose]": {
+    "editor.defaultFormatter": "KilianJPopp.docker-compose-support",
+    "editor.formatOnSave": true
+  },
+  "docker-compose.format.enabled": true
+}

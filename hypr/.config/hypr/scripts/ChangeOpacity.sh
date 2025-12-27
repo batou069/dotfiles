@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 notif="$HOME/.config/swaync/images"
 
 CURRENT_OPACITY=$(hyprctl -j getoption decoration:active_opacity | jq ".float")
 NEW_OPACITY=$(echo "$CURRENT_OPACITY + 0.1" | bc)
 
 if (($(echo "$NEW_OPACITY > 1.4" | bc -l))); then
-    NEW_OPACITY=0.0
+  NEW_OPACITY=0.0
 fi
 
 hyprctl keyword decoration:active_opacity "$NEW_OPACITY"
